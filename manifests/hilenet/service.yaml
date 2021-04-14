@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: nginx
   annotations:
-    strategy.spinnaker.io/versioned: "true"
 spec:
   ports:
     - protocol: TCP
