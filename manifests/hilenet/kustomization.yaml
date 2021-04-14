@@ -1,0 +1,7 @@
+namespace: nginx-hilenet
+bases:
+  - ../base
+resources:
+  - namespace.yaml
+patchesStrategicMerge:
+  - deployment.yaml
