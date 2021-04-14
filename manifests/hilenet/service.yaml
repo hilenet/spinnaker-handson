@@ -4,3 +4,9 @@ metadata:
   name: nginx
   annotations:
     strategy.spinnaker.io/versioned: "true"
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodePort: 30007
