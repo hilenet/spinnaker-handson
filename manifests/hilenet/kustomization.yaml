@@ -3,6 +3,7 @@ bases:
   - ../base
 resources:
   - namespace.yaml
+  - configmap.yaml
 patchesStrategicMerge:
   - deployment.yaml
   - service.yaml
