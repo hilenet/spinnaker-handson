@@ -4,8 +4,6 @@ metadata:
   name: nginx
   labels:
     service: nginx
-  annotations:
-    caching.spinnaker.io/ignore: "true"
 spec:
   selector:
     matchLabels:
