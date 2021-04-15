@@ -2,6 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx
+  annotations:
+    strategy.spinnaker.io/max-version-history: "2"
 data:
   nginx.conf: |
     server {
