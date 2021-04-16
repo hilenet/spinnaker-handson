@@ -3,15 +3,15 @@ kind: Deployment
 metadata:
   name: nginx
   labels:
-    service: dummy
+    service: nginx
 spec:
   selector:
     matchLabels:
-      service: dummy
+      service: nginx
   template:
     metadata:
       labels:
-        service: dummy
+        service: nginx
     spec:
       containers:
       - name: nginx
