@@ -1,0 +1,8 @@
+apiVersion: builtin
+kind: PrefixSuffixTransformer
+metadata:
+  name: spinnaker-suffixer
+suffix: ${spinnakerSuffix}
+fieldSpecs:
+  - path: metadata/name
+    kind: Deployment
