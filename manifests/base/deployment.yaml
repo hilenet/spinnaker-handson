@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
+        image: gcr.io/pf-msa-labo/hilenet-nginx
         ports:
         - containerPort: 80
         resources:
