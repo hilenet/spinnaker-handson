@@ -1,0 +1,20 @@
+namespace: nginx-hilenet
+bases:
+  - ../base
+
+images:
+  - name: gcr.io/pf-msa-labo/nginx-dev
+
+# deployment nameにSPeLを注入してもらう
+patches:
+  - target:
+      kind: Deployment
+      name: ".*"
+    patch: |-
+      - op: replace
+        path: /metadata/name
+        value: "nginx${spinnakerSuffix}"
+
+# custom transformerでも可能
+#transformers:
+#- ./spinnaker-suffixer.yaml
