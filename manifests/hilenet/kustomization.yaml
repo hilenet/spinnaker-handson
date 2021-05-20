@@ -8,5 +8,5 @@ patchesStrategicMerge:
   - deployment.yaml
   - service.yaml
 
-transformers:
-- ./spinnaker-suffixer.yaml
+#transformers:
+#- ./spinnaker-suffixer.yaml
